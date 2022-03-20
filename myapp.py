@@ -9,8 +9,8 @@ def gen_df():
     return chart_data
 
 image = Image.open('KDT-JU.png')
-st.title("My first web app")
 st.image(image)
+st.title("My first web app")
 
 df = gen_df()
 st.dataframe(df)
