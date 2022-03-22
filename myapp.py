@@ -13,9 +13,8 @@ st.image(image)
 st.title("Partner search tool")
 
 df = gen_df()
-st.dataframe(df)
 sel = st.selectbox('Select country',['Spain', 'France', 'Germany'])
 st.bar_chart(df[sel])
-
+st.dataframe(df)
 
 
