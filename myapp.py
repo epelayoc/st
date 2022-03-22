@@ -10,11 +10,11 @@ def gen_df():
 
 image = Image.open('KDT-JU.png')
 st.image(image)
-st.title("My first web app")
+st.title("Partner search tool")
 
 df = gen_df()
 st.dataframe(df)
-sel = st.selectbox('Select column',['a', 'b', 'c'])
+sel = st.selectbox('Select country',['Spain', 'France', 'Germany'])
 st.bar_chart(df[sel])
 
 
