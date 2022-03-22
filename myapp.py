@@ -5,7 +5,7 @@ from PIL import Image
 
 @st.cache      # IMPORTANT: Cache the conversion to prevent computation on every rerun
 def gen_df():
-    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=['a', 'b', 'c'])
+    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=['Spain', 'France', 'Germany'])
     return chart_data
 
 image = Image.open('KDT-JU.png')
