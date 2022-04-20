@@ -31,21 +31,8 @@ st.bar_chart(df_grants)
 # participants
 st.subheader(f'Participants in {ct[country]}')
 st.dataframe(df_participants)
-csv_p = df_participants.to_csv().encode('utf-8')
-st.download_button(
-     label="Download participants data as CSV",
-     data=csv_p,
-     file_name=f'{country}_participants.csv',
-     mime='text/csv',
- )
 
 # coordinators
 st.subheader(f'Project cooordinators in {ct[country]}')
 st.dataframe(df_coordinators)
-csv_c = df_coordinators.to_csv().encode('utf-8')
-st.download_button(
-     label="Download coordinators data as CSV",
-     data=csv_c,
-     file_name=f'{country}_coordinators.csv',
-     mime='text/csv',
- )
+
