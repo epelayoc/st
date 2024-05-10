@@ -8,7 +8,7 @@ from PIL import Image
 # Title
 image = Image.open('KDT-JU.png')
 st.image(image)
-st.title("Partner search")
+st.title("Partners search")
 
 # Select country
 countries = ['ES', 'FR', 'DE']
